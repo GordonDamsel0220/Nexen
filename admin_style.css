@@ -3,10 +3,86 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(238, 223, 203);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("./templates/slider_img//pexels-diva-30441222.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
+.login-container {
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    box-shadow: 2px 2px 18px rgba rgba(0, 0, 0, 0.633);
+    height: 420px;
+    width: 420px;
+    color: rgba(255, 255, 255, 0.834);
+    border-radius: 10px;
+    border: 2px solid white;
+}
 
+.login-container h1 {
+    font-size: 45px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-container .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+}
+
+.input-box input {
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    border: 2px solid white;
+    outline: none;
+    margin-top: 50px;
+    background-color: transparent;
+}
+
+.input-box input::placeholder {
+    color: white;
+}
+
+.remember-forget {
+    position: relative;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between ;
+    color: white;
+}
+
+.remember-forget input {
+    margin-left: 25px;
+    margin-right: 5px;
+}
+
+.remember-forget a {
+    margin-right: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-login {
+    width: 90%;
+    height: 40px;
+    border-radius: 30px;
+    margin-top: 25px;
+    margin-left: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+
+}
