@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap');
 
 * {
     margin: 0;
@@ -14,15 +14,16 @@ body {
     background: url("./templates/slider_img//pexels-diva-30441222.jpg");
     background-size: cover;
     background-position: center;
+    font-family: "Work Sans", serif;
 }
 
 .login-container {
     background-color: transparent;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(25px);
     box-shadow: 2px 2px 18px rgba rgba(0, 0, 0, 0.633);
     height: 420px;
     width: 420px;
-    color: rgba(255, 255, 255, 0.834);
+    color: rgb(255, 255, 255);
     border-radius: 10px;
     border: 2px solid white;
 }
@@ -50,10 +51,11 @@ body {
     outline: none;
     margin-top: 50px;
     background-color: transparent;
+    caret-color: white;
 }
 
 .input-box input::placeholder {
-    color: white;
+    color: rgba(255, 255, 255, 0.553);
 }
 
 .remember-forget {
@@ -67,6 +69,7 @@ body {
 .remember-forget input {
     margin-left: 25px;
     margin-right: 5px;
+    accent-color: rgb(208, 28, 208);
 }
 
 .remember-forget a {
@@ -84,5 +87,10 @@ body {
     background-color: transparent;
     border: 2px solid white;
     color: white;
+    transition: 0.3 ease;
+}
 
+.btn-login:hover {
+    background-color: purple;
+    font-weight: 700;
 }
